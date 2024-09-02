@@ -1,1 +1,9 @@
+import csv
+
+def read_csv_file(filepath):
+    with open(filepath, newline = '' ) as csvfile:
+        reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+        #testing purposes, replace with list storage i think
+        for row in reader:
+            print(row)
 
